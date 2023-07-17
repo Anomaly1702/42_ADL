@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/16 12:54:17 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/17 15:34:39 by adatta-g         ###   ########.fr       */
+/*   Created: 2023/07/17 13:01:36 by adatta-g          #+#    #+#             */
+/*   Updated: 2023/07/17 13:04:36 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*strchr(const char *str, int c)
+char	*strrchr(const char *str, int c)
 {
 	int	i;
+	int	flag;
 
 	i = 0;
+	flag = NULL;
 	while (str[i])
 	{
 		if (str[i] == c)
-			return (str + i);
+			flag = i;
 		i++;
 	}
+	if (flag)
+		return (str + flag);
 
 	return (NULL);
 }

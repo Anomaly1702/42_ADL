@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/16 12:54:17 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/17 15:34:39 by adatta-g         ###   ########.fr       */
+/*   Created: 2023/07/17 13:03:54 by adatta-g          #+#    #+#             */
+/*   Updated: 2023/07/17 13:33:42 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char	*strchr(const char *str, int c)
+int	strncmp(const char *str1, const char *str2, int n)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (i <= n && (str1[i] || str2[i]))
 	{
-		if (str[i] == c)
-			return (str + i);
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
 		i++;
 	}
+	return (str1[i] - str2[i]);
 
-	return (NULL);
 }

@@ -1,28 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/16 12:54:17 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/17 15:34:39 by adatta-g         ###   ########.fr       */
+/*   Created: 2023/07/17 16:51:44 by adatta-g          #+#    #+#             */
+/*   Updated: 2023/07/17 16:52:01 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include<stdio.h>
 
-char	*strchr(const char *str, int c)
+int	str_len(char *string)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (string[i] != '\0')
 	{
-		if (str[i] == c)
-			return (str + i);
 		i++;
 	}
+	return (i);
+}
 
-	return (NULL);
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+{
+	unsigned int	i;
+	int				dest_len;
+
+	i = 0;
+	dest_len = str_len(dest);
+	while (src[i] != '\0' && i < size - 1)
+	{
+		dest[dest_len + i] = src[i];
+		i++;
+	}
+	dest[dest_len + i] = '\0';
+	return (str_len(src) + dest_len);
 }
