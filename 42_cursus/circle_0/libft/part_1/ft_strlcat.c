@@ -6,11 +6,11 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:51:44 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 10:09:10 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:05:16 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	str_len(char *string)
 {

@@ -6,11 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 16:47:32 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/22 10:08:15 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:05:37 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*memmove(char *str1, char *str2, int n)
+#include "libft.h"
+
+char	*ft_memmove(char *str1, char *str2, int n)
 {
 	int	i;
 

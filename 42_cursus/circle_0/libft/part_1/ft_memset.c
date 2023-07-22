@@ -6,13 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 20:35:16 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/22 10:03:47 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:05:32 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-char	*memset(char *str, char c, int n)
+char	*ft_memset(char *str, char c, int n)
 {
 	int	i;
 

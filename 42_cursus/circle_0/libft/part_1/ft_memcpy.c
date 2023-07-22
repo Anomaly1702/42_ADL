@@ -6,11 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 21:02:29 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/22 09:57:27 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:05:42 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*memcpy(char *dest, char *src, int n)
+#include "libft.h"
+
+char	*ft_memcpy(char *dest, char *src, int n)
 {
 	int	i;
 

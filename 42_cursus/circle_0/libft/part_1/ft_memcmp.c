@@ -6,11 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 16:20:07 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/22 10:08:07 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:05:47 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	memcmp(char *str1, char *str2, int n)
+#include "libft.h"
+
+int	ft_memcmp(char *str1, char *str2, int n)
 {
 	int	i;
 

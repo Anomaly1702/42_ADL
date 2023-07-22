@@ -6,13 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 20:08:00 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/22 09:55:27 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:05:54 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-char	*memchr(const char *str, int c, int n)
+char	*ft_memchr(const char *str, int c, int n)
 {
 	int	i;
 

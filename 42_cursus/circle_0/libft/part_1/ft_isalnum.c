@@ -6,11 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 12:20:19 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/16 12:24:53 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:06:16 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	isascii(char c)
+#include "libft.h"
+
+char	isalnum(char c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);

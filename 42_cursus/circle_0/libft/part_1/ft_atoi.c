@@ -6,11 +6,11 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:29:42 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 10:11:22 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:06:27 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	hlpr(char *str, int cntr)
 {

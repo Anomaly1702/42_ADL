@@ -6,11 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 18:40:56 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 10:07:58 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:06:04 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int arg)
+#include "libft.h"
+
+int	ft_isdigit(int arg)
 {
 	if (arg >= 0 && arg <= 9)
 		return (1);

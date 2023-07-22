@@ -6,13 +6,14 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 13:01:36 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 10:10:01 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:03:33 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
-char	*strrchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
 	int	flag;

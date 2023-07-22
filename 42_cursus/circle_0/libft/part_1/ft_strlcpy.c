@@ -1,20 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/16 12:33:23 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 16:05:59 by adatta-g         ###   ########.fr       */
+/*   Created: 2023/07/17 16:44:20 by adatta-g          #+#    #+#             */
+/*   Updated: 2023/07/22 15:51:10 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-char	ft_isprint(char c)
+int	str_len(char *string)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	int	i;
+
+	i = 0;
+	while (string[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+char	*ft_strlcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int	i;
+	int				dest_len;
+
+	i = 0;
+	dest_len = 0;
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	dest_len = str_len(dest);
+	return (dest_len);
 }

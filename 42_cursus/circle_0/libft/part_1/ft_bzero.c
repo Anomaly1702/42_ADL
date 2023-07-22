@@ -6,11 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 20:59:03 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/22 09:50:49 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 16:06:21 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*bzero(char *str, int n)
+#include "libft.h"
+
+char	*ft_bzero(char *str, int n)
 {
 	int	i;
 
