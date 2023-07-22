@@ -3,24 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 16:47:32 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/21 16:47:32 by marvin           ###   ########.fr       */
+/*   Updated: 2023/07/22 10:08:15 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    *memmove(char *str1, char *str2, int n)
+char	*memmove(char *str1, char *str2, int n)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (str1[i] && i < n)
-    {
-        str2[i] = str1[i];   
-        i++;
-    }
-    str2[i] = '\0';
-    return (str2);
+	i = 0;
+	while (str1[i] && i < n)
+	{
+		str2[i] = str1[i];
+		i++;
+	}
+	str2[i] = '\0';
+	return (str2);
 }
-

@@ -6,7 +6,7 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 13:03:54 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/17 13:33:42 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 10:11:06 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ int	strncmp(const char *str1, const char *str2, int n)
 		i++;
 	}
 	return (str1[i] - str2[i]);
-
 }

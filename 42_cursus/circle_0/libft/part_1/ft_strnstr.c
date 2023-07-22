@@ -6,11 +6,11 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 13:34:12 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/17 16:27:02 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/22 10:10:23 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include <stdio.h>
 
 int	str_len(char *string)
 {
@@ -24,7 +24,7 @@ int	str_len(char *string)
 	return (i);
 }
 
-char	*ft_strnstr(char *str, char *to_find,int n)
+char	*ft_strnstr(char *str, char *fnd, int n)
 {
 	int	f_l;
 	int	i;
@@ -32,16 +32,16 @@ char	*ft_strnstr(char *str, char *to_find,int n)
 	int	s_l;
 
 	i = 0;
-	f_l = str_len(to_find);
+	f_l = str_len(fnd);
 	s_l = str_len(str);
-	while (str[i] != '\0' && i < (s_l - f_l) &&i <=n)
+	while (str[i] != '\0' && i < (s_l - f_l) && i <= n)
 	{
 		j = 0;
-		if (str[i] == to_find[j])
+		if (str[i] == fnd[j])
 		{
 			while (j < f_l)
 			{
-				if (str[i + j] != to_find[j])
+				if (str[i + j] != fnd[j])
 					break ;
 				j++;
 			}

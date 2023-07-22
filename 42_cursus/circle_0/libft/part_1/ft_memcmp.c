@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 16:20:07 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/21 16:20:07 by marvin           ###   ########.fr       */
+/*   Updated: 2023/07/22 10:08:07 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int memcmp(const char   *str1, const char   *str2, int  n)
+int	memcmp(char *str1, char *str2, int n)
 {
-    int	i;
+	int	i;
 
 	i = 0;
 	while (i <= n && (str1[i] || str2[i]))

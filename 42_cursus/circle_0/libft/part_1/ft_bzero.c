@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 20:59:03 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/20 20:59:03 by marvin           ###   ########.fr       */
+/*   Updated: 2023/07/22 09:50:49 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    bzero(char *str, int n)
+char	*bzero(char *str, int n)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while(str[i] && i <n)
-    {
-        str[i] = '\0';
-        i ++;
-    }
-    return str;
+	i = 0;
+	while (str[i] && i < n)
+	{
+		str[i] = '\0';
+		i ++;
+	}
+	return (str);
 }

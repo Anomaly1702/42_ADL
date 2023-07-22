@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 20:35:16 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/20 20:35:16 by marvin           ###   ########.fr       */
+/*   Updated: 2023/07/22 10:03:47 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include <stdio.h>
 
-char    *memset(char *str, int c, size_t n)
+char	*memset(char *str, char c, int n)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while(str[i] && i <n)
-    {
-        str[i] = c;
-        i ++;
-    }
-    return str;
+	i = 0;
+	while (str[i] && i < n)
+	{
+		str[i] = c;
+		i ++;
+	}
+	return (str);
 }

@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 21:02:29 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/20 21:02:29 by marvin           ###   ########.fr       */
+/*   Updated: 2023/07/22 09:57:27 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *memcpy(char *dest, const char * src, int n)
+char	*memcpy(char *dest, char *src, int n)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (src[i] && i < n)
-    {
-        dest[i] = src[i];   
-        i++;
-    }
-    dest[i] = '\0';
-    return (dest);
+	i = 0;
+	while (src[i] && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
