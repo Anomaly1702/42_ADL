@@ -1,46 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlccpy.c                                      :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/17 16:44:20 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 09:48:46 by adatta-g         ###   ########.fr       */
+/*   Created: 2023/07/22 11:04:40 by adatta-g          #+#    #+#             */
+/*   Updated: 2023/07/22 11:28:22 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stdlib.h>
 
-int	str_len(char *string)
+int	strlen(char *arg)
 {
 	int	i;
 
 	i = 0;
-	while (string[i] != '\0')
-	{
+	while (arg[i])
 		i++;
-	}
 	return (i);
 }
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned int	i;
-	int				dest_len;
+	char	*n_str;
+	int		i;
+	int		j;
+	int		t_len;
 
 	i = 0;
-	dest_len = 0;
-	while (i < n && src[i] != '\0')
+	j = 0;
+	t_len = strlen(s1) + strlen(s2);
+	n_str = (char *) malloc(t_len);
+	if (!n_str)
+		return (NULL);
+	while (s1[i])
 	{
-		dest[i] = src[i];
+		n_str[i] = s1[i];
 		i++;
 	}
-	while (i < n)
+	while (s2[j])
 	{
-		dest[i] = '\0';
+		n_str[i] = s2[j];
 		i++;
+		j++;
 	}
-	dest_len = str_len(dest);
-	return (dest);
+	n_str[i] = '\0';
+	return (n_str);
 }
