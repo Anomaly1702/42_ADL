@@ -6,13 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 12:20:19 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 16:06:16 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/23 09:53:09 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	isalnum(char c)
+char	ft_isalnum(char c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);

@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/17 13:01:36 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/23 13:14:06 by adatta-g         ###   ########.fr       */
+/*   Created: 2023/07/23 00:10:34 by marvin            #+#    #+#             */
+/*   Updated: 2023/07/23 13:14:36 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(char *str, int c)
+void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (s[i])
 	{
-		if (str[i] == (char)c)
-			return (str + i);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
-	if (str[i] == '\0' && c == '\0')
-		return (str + i);
-	return (NULL);
 }

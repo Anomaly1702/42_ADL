@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/17 13:01:36 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/23 13:14:06 by adatta-g         ###   ########.fr       */
+/*   Created: 2023/07/23 13:41:11 by adatta-g          #+#    #+#             */
+/*   Updated: 2023/07/23 13:41:28 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(char *str, int c)
+void	*ft_calloc(size_t count, size_t size)
 {
-	int	i;
+	char	*ptr;
+	size_t	i;
 
 	i = 0;
-	while (str[i])
+	ptr = malloc(count * size);
+	if (ptr == NULL)
+		return (0);
+	while (i < count * size)
 	{
-		if (str[i] == (char)c)
-			return (str + i);
+		ptr[i] = 0;
 		i++;
 	}
-	if (str[i] == '\0' && c == '\0')
-		return (str + i);
-	return (NULL);
+	return (ptr);
 }

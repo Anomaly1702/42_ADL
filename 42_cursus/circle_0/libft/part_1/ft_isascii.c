@@ -6,13 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 12:12:43 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 16:06:08 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/23 10:27:13 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_isascii(char c)
+char	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

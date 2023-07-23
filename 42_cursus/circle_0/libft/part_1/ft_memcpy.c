@@ -6,22 +6,27 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 21:02:29 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/22 16:05:42 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/23 13:39:01 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_memcpy(char *dest, char *src, int n)
+void	*ft_memcpy(void *dest, const void *src, int n)
 {
-	int	i;
+	char	*destination;
+	char	*source;
+	int		i;
 
 	i = 0;
-	while (src[i] && i < n)
+	destination = (char *)dest;
+	source = (char *)src;
+	if (!n || destination == source)
+		return (dest);
+	while (i < n)
 	{
-		dest[i] = src[i];
+		destination[i] = source[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (destination);
 }
