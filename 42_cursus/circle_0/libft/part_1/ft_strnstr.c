@@ -6,16 +6,16 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 13:34:12 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/24 12:01:18 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 13:08:05 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *fnd, int n)
+char	*ft_strnstr(const char *str, const char *fnd, unsigned int n)
 {
-	int	i;
-	int	j;
+	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
 	if (*fnd == '\0' || fnd == NULL)
