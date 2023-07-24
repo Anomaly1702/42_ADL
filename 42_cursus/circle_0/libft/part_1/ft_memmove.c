@@ -6,13 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 16:47:32 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/23 10:59:36 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 11:45:56 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(char *str1, char *str2, int n)
+void	*ft_memmove(void *str1, void *str2, int n)
 {
 	int		i;
 	char	*dest;
@@ -30,7 +30,7 @@ void	*ft_memmove(char *str1, char *str2, int n)
 	}
 	else
 	{
-		while (src[i] && i < n)
+		while (i < n)
 		{
 			dest[i] = src[i];
 			i++;

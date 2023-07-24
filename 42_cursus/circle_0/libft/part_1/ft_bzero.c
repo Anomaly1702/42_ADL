@@ -6,21 +6,24 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 20:59:03 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/22 16:06:21 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 11:41:04 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_bzero(char *str, int n)
+void	ft_bzero(void *string, int n)
 {
-	int	i;
+	char	*str;
+	int		i;
 
+	str = (char *)string;
 	i = 0;
-	while (str[i] && i < n)
+	if (n == 0)
+		return ;
+	while (i < n)
 	{
 		str[i] = '\0';
 		i ++;
 	}
-	return (str);
 }

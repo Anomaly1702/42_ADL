@@ -6,17 +6,17 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 18:04:13 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 16:06:11 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 11:12:26 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return (1024);
+		return (1);
 	else if (c >= 'a' && c <= 'z')
-		return (1024);
+		return (1);
 	return (0);
 }

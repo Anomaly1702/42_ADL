@@ -6,7 +6,7 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:44:20 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/23 13:06:40 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 11:20:42 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	i = 0;
 	len = 0;
 	s = (char *)src;
-	if (!dst)
-		return (0);
 	len = ft_strlen(s);
 	if (!size)
 		return (len);

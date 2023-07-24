@@ -6,21 +6,22 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 20:35:16 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/23 10:59:21 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 11:28:46 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_memset(char *str, char c, int n)
+void	*ft_memset(void *input, int c, int n)
 {
-	int	i;
+	char	*str;
+	int		i;
 
 	i = 0;
-	while (str[i] && i < n)
+	str = (char *)input;
+	while (n--)
 	{
-		str[i] = c;
-		i ++;
+		str[i++] = (char)c;
 	}
 	return (str);
 }

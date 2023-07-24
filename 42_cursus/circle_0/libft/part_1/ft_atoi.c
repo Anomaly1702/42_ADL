@@ -6,7 +6,7 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:29:42 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/22 16:06:27 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 11:43:01 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,15 @@ int	ft_atoi(char *str)
 
 	i = 0;
 	cntr = 1;
-	if (str == NULL)
-		return (0);
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
 		|| str[i] == '\f' || str[i] == '\r')
 		i++;
-	if (str[i] == '+' || str[i] == '-')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
 			cntr = -1;
 		i++;
 	}
-	num = hlpr(str + i, cntr) * cntr;
+	num = hlpr(str + i, cntr);
 	return (num);
 }

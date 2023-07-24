@@ -6,7 +6,7 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/22 10:13:46 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/23 13:13:36 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 11:17:13 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	else
 		substr_len = len;
 	substr = (char *) malloc((substr_len + 1) * sizeof(char));
+	if (!substr)
+		return (NULL);
 	ft_strlcpy(substr, s + start, substr_len + 1);
 	substr[substr_len] = '\0';
 	return (substr);
