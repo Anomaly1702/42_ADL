@@ -6,13 +6,13 @@
 /*   By: adatta-g <adatta-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:51:44 by adatta-g          #+#    #+#             */
-/*   Updated: 2023/07/23 13:57:02 by adatta-g         ###   ########.fr       */
+/*   Updated: 2023/07/24 11:53:54 by adatta-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 {
 	size_t	i;
 	size_t	j;
